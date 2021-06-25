@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.TickerOrder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fuck">
+        <activity android:name="com.example.TickerOrder.background.ending"></activity>
+        <activity android:name="com.example.TickerOrder.checkbook" />
+        <activity android:name="com.example.TickerOrder.background.loading" />
+        <activity android:name="com.example.TickerOrder.login" />
+        <activity android:name="com.example.TickerOrder.register" />
+        <activity android:name="com.example.TickerOrder.ticketCheck"/>
+        <activity android:name="com.example.TickerOrder.deleting"/>
+        <activity android:name="com.example.TickerOrder.delederec"/>
+        <activity
+            android:name="com.example.TickerOrder.searchTicket"
+            android:label="@string/title_activity_search_ticket"
+            android:theme="@style/Theme.Fuck.NoActionBar" />
+        <activity android:name="com.example.TickerOrder.calendar" />
+        <activity android:name="com.example.TickerOrder.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.TickerOrder.searchCar" />
+    </application>
+
+</manifest>
