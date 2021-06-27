@@ -17,7 +17,7 @@ public class car1all {
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
 		long start = System.currentTimeMillis();
-		conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+		conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "id", "password");
 		
 		System.out.println(conn);
 
