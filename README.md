@@ -5,7 +5,7 @@ Simulating ticket ordering process on android studio.
 TicketOrder儲存android studio app的檔案
 oop_final儲存Mysql創建的檔案
 
-![投影片1](https://user-images.githubusercontent.com/73888718/124497830-0de50580-ddee-11eb-9443-f1137dacf5f2.JPG)
+![投影片](https://user-images.githubusercontent.com/73888718/124512653-78586e80-de0b-11eb-8ba2-65d9fdef9514.jpg)
 ![投影片2](https://user-images.githubusercontent.com/73888718/124497842-10dff600-ddee-11eb-8c01-a63fa7762f59.JPG)
 ![投影片3](https://user-images.githubusercontent.com/73888718/124497848-13dae680-ddee-11eb-9f1e-d007e4c370c7.JPG)
 ![投影片4](https://user-images.githubusercontent.com/73888718/124497852-150c1380-ddee-11eb-8210-3bcd32ac171d.JPG)
