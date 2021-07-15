@@ -84,7 +84,7 @@ public class Account {
         //5 account already exist
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
             Statement stmt = conn.createStatement();
 
 
@@ -133,7 +133,7 @@ public class Account {
 
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
             Statement stmt = conn.createStatement();
         } catch (SQLException e) {
             // TODO Auto-generated catch block
@@ -158,7 +158,7 @@ public class Account {
 
         //2 match password
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
             Statement stmt = conn.createStatement();
         } catch (SQLException e) {
             // TODO Auto-generated catch block
