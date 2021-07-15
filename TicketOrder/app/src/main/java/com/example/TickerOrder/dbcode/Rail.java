@@ -202,7 +202,7 @@ public class Rail implements Comparable{
         int spare = 0;
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+            conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
         } catch (SQLException ex) {
             // TODO Auto-generated catch block
             ex.printStackTrace();
