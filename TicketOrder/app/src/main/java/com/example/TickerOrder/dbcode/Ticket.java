@@ -111,7 +111,7 @@ public class Ticket extends Rail {
             String sql = String.format("UPDATE `%s` SET `%d` = 1 where `seat` = '%s' and `car_num` = %d and `car_id` = %d"
                     , this.getDate().transfrom(), i+1, p[1],  Integer.parseInt(p[0]), getTag());
             try (
-                    Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+                    Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
                     Statement stmt = conn.createStatement()){
 
                 stmt.executeUpdate(sql);
@@ -123,7 +123,7 @@ public class Ticket extends Rail {
         String sql1 = String.format("select Discount from car_time where `car_id` = %d and `date` = '%s'", getTag(), getDate().toString());
         PreparedStatement ps = null;
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
             ps = conn.prepareStatement(sql1);
         } catch (SQLException e1) {
             // TODO Auto-generated catch block
@@ -152,7 +152,7 @@ public class Ticket extends Rail {
         String sql3=String.format("INSERT INTO record VALUES ('%s', %d, %d, %d, '%s', '%s', '%s', %d, '%s',0)"
                 , IDCard, getTag(), begin, finish, getDate().toString(), getStart().toString(), getEnd().toString(), Integer.parseInt(p[0]), p[1]);
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
                 Statement stmt = conn.createStatement()){
 
             stmt.executeUpdate(sql2);
@@ -168,7 +168,7 @@ public class Ticket extends Rail {
         String sql = String.format("UPDATE record SET price = %d where `seat` = '%s' and `IDCard` = '%s' and `date` = '%s'"
                 , price, tmp[1], IDCard, getDate().toString());
         try (
-                Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
                 Statement stmt = conn.createStatement()){
 
             stmt.executeUpdate(sql);
@@ -189,7 +189,7 @@ public class Ticket extends Rail {
                 , Integer.parseInt(p[0]), getTag(), begin+1, finish+1);
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
             PreparedStatement st1 = conn.prepareStatement(sql1);
             Object[] param = {getSeat(), getStart().toString(),getEnd().toString(), getDate().toString()};
             st1.setString(1,p[1]);
@@ -234,7 +234,7 @@ public class Ticket extends Rail {
                         , Integer.parseInt(p[0]), getTag(), begin+1, finish+1)+" "
                 +p[1]+" "+getStart().toString()+" "+getEnd().toString()+" "+getDate().toString());
 
-                Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
                 Statement stmt = conn.createStatement();
 
                 PreparedStatement st = conn.prepareStatement(sql);
