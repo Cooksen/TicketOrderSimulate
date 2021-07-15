@@ -34,7 +34,7 @@ private void SetRail() {
         int i = 0;
         Connection conn = null;
         try {
-        conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "senchao");
+        conn = DriverManager.getConnection("jdbc:mysql://kaycloud.i234.me:3306/sen_oop?useSSL=false", "senchao", "password");
         } catch (SQLException e1) {
         // TODO Auto-generated catch block
         e1.printStackTrace();
