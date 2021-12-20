@@ -24,4 +24,3 @@ oop_final儲存Mysql創建的檔案
 ![投影片17](https://user-images.githubusercontent.com/73888718/124497907-25bc8980-ddee-11eb-9c22-55cca5e92117.JPG)
 ![投影片18](https://user-images.githubusercontent.com/73888718/124497910-26edb680-ddee-11eb-847e-54dd18a991e3.JPG)
 ![投影片19](https://user-images.githubusercontent.com/73888718/124497913-281ee380-ddee-11eb-9dc2-51b570d92755.JPG)
-![投影片20](https://user-images.githubusercontent.com/73888718/124497918-2b19d400-ddee-11eb-8ebe-1c6a8ec8c1bc.JPG)
